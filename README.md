@@ -1,6 +1,6 @@
 # openclaw-codex-bridge
 
-OpenClaw × Codex bridge skill for task packets, runtime semantics, review/retry/reopen flow, and audit trace handling.
+OpenClaw × Codex bridge skill for task packets, runtime semantics, review / retry / reopen flow, and audit trace handling.
 
 ## What it is
 
@@ -14,15 +14,6 @@ It focuses on the operational bridge between OpenClaw orchestration and Codex ex
 - review / retry / reopen flow
 - audit tracing with `roomId`, `runId`, and `sourceRunId`
 - standardized delivery format for engineering tasks
-
-## Repository structure
-
-- `SKILL.md` — skill definition and operating rules
-- `references/` — protocol docs and execution guidance
-- `assets/packet.template.json` — starter task packet template
-- `assets/blocked-report.template.json` — starter blocked report template
-- `_meta.json` — lightweight repo metadata
-- `skill-repo.json` — repo packaging note for OpenClaw skill distribution
 
 ## Core idea
 
@@ -42,6 +33,15 @@ The key is not just prompting better. The key is creating a repeatable engineeri
 - blocked-state recovery
 - review / retry / reopen lineage
 - audit trace evidence
+
+## Repository structure
+
+- `SKILL.md` — skill definition and operating rules
+- `references/` — protocol docs and execution guidance
+- `assets/packet.template.json` — starter task packet template
+- `assets/blocked-report.template.json` — starter blocked report template
+- `_meta.json` — lightweight repo metadata
+- `skill-repo.json` — packaging note for OpenClaw skill distribution
 
 ## Included references
 
