@@ -1,0 +1,9 @@
+{
+  "name": "openclaw-codex-bridge",
+  "type": "openclaw-skill-repo",
+  "version": "0.1.0",
+  "notes": [
+    "Repo root is the skill root.",
+    "Keep this repository minimal: SKILL.md, references/, assets/, optional _meta.json."
+  ]
+}

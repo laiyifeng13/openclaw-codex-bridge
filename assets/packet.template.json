@@ -1,0 +1,51 @@
+{
+  "packetVersion": "openclaw.codex.dispatch.v1",
+  "backend": "acp",
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "dispatch-unique-id",
+    "method": "dispatch",
+    "params": {
+      "workspaceId": "system-upgrade",
+      "supervisorId": "openclaw-supervisor",
+      "targetAgentId": "main",
+      "taskType": "ops",
+      "payload": {
+        "projectId": "openclaw-codex-bridge",
+        "taskId": "replace-with-task-id",
+        "requirements": [
+          "Describe the concrete engineering work Codex must complete."
+        ],
+        "constraints": [
+          "Keep the scope minimal.",
+          "Explain blockers explicitly if the task cannot complete."
+        ],
+        "deliverableFormat": "markdown",
+        "priority": "high",
+        "metadata": {
+          "dispatchIntent": "engineering-task",
+          "runtimeEntry": "direct-dispatch-packet",
+          "acpPermissionProfile": "workspace-write"
+        }
+      }
+    }
+  },
+  "task": {
+    "projectId": "openclaw-codex-bridge",
+    "taskId": "replace-with-task-id",
+    "title": "Replace with a concrete task title",
+    "status": "todo",
+    "owner": "openclaw",
+    "definitionOfDone": [
+      "Describe the exact acceptance check."
+    ],
+    "artifacts": [],
+    "rollback": {
+      "strategy": "manual",
+      "steps": []
+    },
+    "sessionKeys": [],
+    "budget": {},
+    "updatedAt": "2026-04-17T00:00:00.000Z"
+  }
+}

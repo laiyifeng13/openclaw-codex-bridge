@@ -1,0 +1,31 @@
+{
+  "reportVersion": "openclaw.codex.blocked-report.v1",
+  "dispatchId": "dispatch-unique-id",
+  "status": "blocked",
+  "blockedReason": "runtime_permission_required",
+  "nextAction": "approve_runtime_read",
+  "summary": "ACP runtime hit a recoverable blocker.",
+  "dispatch": {
+    "workspaceId": "system-upgrade",
+    "supervisorId": "openclaw-supervisor",
+    "targetAgentId": "main",
+    "runtimeBackend": "acp",
+    "runtimeAgentId": "codex",
+    "sessionKey": "agent:codex:acp:dispatch-unique-id",
+    "sessionId": "optional-session-id"
+  },
+  "evidence": {
+    "detail": "Preserve the root cause instead of swallowing it.",
+    "acpExitCode": 5,
+    "acpSignal": null,
+    "acpStdout": "optional raw stdout",
+    "acpStderr": "optional raw stderr"
+  },
+  "verification": [
+    "State what was attempted before the block happened."
+  ],
+  "operatorAction": [
+    "State what OpenClaw or the operator should do next."
+  ],
+  "updatedAt": "2026-04-17T00:00:00.000Z"
+}
